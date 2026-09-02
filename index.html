@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ВАРТА — Політика конфіденційності</title>
+<meta name="description" content="Політика конфіденційності застосунку ВАРТА: які дані збираються, навіщо, і як видалити акаунт.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0b0c; --surface:#131417; --surface-2:#191b1f; --line:#282a30; --line-2:#383b43;
+  --text:#eef0f0; --text-dim:#a4a7ad; --muted:#70747b;
+  --accent:#ff6a2b; --accent-soft:#3a2314; --green:#5cb176; --green-soft:#13291b;
+  --display:"Manrope",system-ui,-apple-system,sans-serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:light){
+  :root{--bg:#f4f2ee;--surface:#fffdfa;--surface-2:#f6f3ee;--line:#e2ddd3;--line-2:#d2ccc0;
+  --text:#20222a;--text-dim:#55585f;--muted:#8a8d94;--accent:#e2551a;--accent-soft:#fbe6d5;
+  --green:#3f8a58;--green-soft:#e2f0e6;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+  font-size:16px;line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:52px 24px 96px}
+header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px}
+.brand{display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.brand svg{width:30px;height:30px}
+.brand b{font-family:var(--display);font-size:19px;font-weight:800;letter-spacing:.15em}
+h1{font-family:var(--display);font-size:clamp(26px,5vw,34px);font-weight:800;
+  letter-spacing:-.02em;line-height:1.12;margin:0 0 10px;text-wrap:balance}
+.upd{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:0}
+.lede{color:var(--text-dim);margin:18px 0 0}
+.lede b{color:var(--text)}
+h2{font-family:var(--display);font-size:20px;font-weight:700;letter-spacing:-.01em;
+  margin:42px 0 12px;text-wrap:balance}
+h3{font-family:var(--display);font-size:16px;font-weight:650;margin:24px 0 8px}
+p{margin:0 0 14px;color:var(--text-dim)}
+p b,li b{color:var(--text)}
+ul{margin:0 0 16px;padding-left:20px;color:var(--text-dim)}
+li{margin-bottom:7px}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:14px;background:var(--surface-2);
+  border-radius:5px;padding:1px 6px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:18px 20px;margin:18px 0}
+.box.good{border-left:2px solid var(--green);border-radius:0 14px 14px 0}
+.box.key{border-left:2px solid var(--accent);border-radius:0 14px 14px 0}
+.box p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;margin:8px 0 18px;font-size:15px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:500}
+td:first-child{color:var(--text);font-weight:600}
+tbody tr:last-child td{border-bottom:0}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7.6,5.4 L16.4,5.4 L20.2,10.2 L12,19.6 L3.8,10.2 Z" fill="none"
+            stroke="#ff6a2b" stroke-width="1.9" stroke-linejoin="round"/>
+      <path d="M3.8,10.2 L20.2,10.2 M7.6,5.4 L12,19.6 M16.4,5.4 L12,19.6"
+            stroke="#ff6a2b" stroke-width="1.2" stroke-opacity=".85"/>
+    </svg>
+    <b>ВАРТА</b>
+  </div>
+  <h1>Політика конфіденційності</h1>
+  <p class="upd">Оновлено: 2 вересня 2026</p>
+  <p class="lede">ВАРТА — застосунок сповіщень про повітряну загрозу. Ця сторінка описує,
+  <b>які дані застосунок збирає, навіщо, кому передає і як їх видалити</b>. Написано так,
+  щоб це можна було прочитати й зрозуміти, а не лише формально мати.</p>
+</header>
+
+<div class="box good">
+  <p><b>Найкоротше.</b> Застосунок <b>не визначає ваше місцезнаходження</b> — дозволу на
+  геолокацію він не запитує взагалі, а області ви обираєте вручну зі списку. Немає реклами,
+  немає аналітичних трекерів, дані не продаються і не передаються третім особам для
+  маркетингу.</p>
+</div>
+
+<h2>Хто відповідальний за дані</h2>
+<p>Застосунок ВАРТА (пакет <code>win.kuub.varta</code>) розробляє і підтримує приватна особа.
+Контакт для будь-яких питань щодо даних, зокрема запитів на видалення:
+<a href="mailto:kuubek55@gmail.com">kuubek55@gmail.com</a>.</p>
+
+<h2>Які дані збираються</h2>
+<p>Лише те, без чого застосунок не може виконувати свою функцію — вчасно надсилати вам
+сповіщення про загрозу та давати бачити стан близьких.</p>
+
+<table>
+  <thead><tr><th>Дані</th><th>Навіщо</th></tr></thead>
+  <tbody>
+    <tr><td>Логін, відображуване ім'я, пароль</td>
+        <td>Обліковий запис. Пароль зберігається лише як криптографічний хеш — у відкритому вигляді він не зберігається ніде.</td></tr>
+    <tr><td>Адреса електронної пошти</td>
+        <td>Лише якщо ви входите через Google — надходить від Google разом із підтвердженням входу. Використовується для впізнавання акаунту.</td></tr>
+    <tr><td>Обрані області та міста</td>
+        <td>Щоб надсилати сповіщення лише про ваші регіони. Ви обираєте їх вручну зі списку — застосунок не визначає ваше розташування.</td></tr>
+    <tr><td>Налаштування сповіщень</td>
+        <td>Мінімальний рівень загрози, приглушені джерела, обрані звуки.</td></tr>
+    <tr><td>Ідентифікатор пристрою і токен push</td>
+        <td>Технічні ідентифікатори, які видає Google Firebase, щоб доставити сповіщення саме на ваш телефон. Також зберігаються версія застосунку та версія Android — для діагностики збоїв доставки.</td></tr>
+    <tr><td>Ваш стан («в укритті», «вдома», «на роботі»)</td>
+        <td>Тільки якщо ви самі його вкажете. Видимий вашим друзям і учасникам ваших груп. Можна прибрати будь-коли.</td></tr>
+    <tr><td>Область у профілі спільноти</td>
+        <td>Необов'язково і за вашим вибором — показується поруч із вашим ім'ям у спільних чатах.</td></tr>
+    <tr><td>Повідомлення, реакції, позначки прочитання</td>
+        <td>Якщо ви користуєтесь чатами. Видимі учасникам відповідного чату.</td></tr>
+    <tr><td>Друзі та участь у групах</td>
+        <td>Щоб чати й спільні статуси працювали.</td></tr>
+    <tr><td>Технічні записи про доставку</td>
+        <td>Які сповіщення й коли були надіслані на ваш акаунт — щоб можна було розібратися, чому сповіщення не дійшло.</td></tr>
+  </tbody>
+</table>
+
+<h3>Чого застосунок НЕ збирає</h3>
+<ul>
+  <li><b>Місцезнаходження пристрою.</b> Дозвіл на геолокацію не запитується — його немає в застосунку.</li>
+  <li><b>Контакти, камеру, мікрофон, файли, SMS, журнал дзвінків.</b></li>
+  <li><b>Рекламні ідентифікатори.</b> Реклами в застосунку немає.</li>
+  <li><b>Аналітику поведінки</b> — сторонніх аналітичних SDK не встановлено.</li>
+</ul>
+
+<h2>Кому дані передаються</h2>
+<p>Дані <b>не продаються</b> і не передаються нікому для реклами чи маркетингу. Технічно
+задіяні лише:</p>
+<ul>
+  <li><b>Google Firebase Cloud Messaging</b> — доставляє сповіщення на ваш пристрій.
+  Отримує push-токен вашого пристрою та текст сповіщення (тип загрози, область, час).</li>
+  <li><b>Google Sign-In</b> — лише якщо ви обираєте вхід через Google. Google повідомляє
+  застосунку ваш ідентифікатор і, за наявності, підтверджену пошту.</li>
+</ul>
+<p>Джерела даних про загрози (офіційний стан тривог та публічні моніторингові канали)
+працюють в один бік: застосунок <b>читає</b> їх і <b>нічого про вас їм не передає</b>.</p>
+
+<div class="box key">
+  <p><b>Правоохоронні органи.</b> Дані можуть бути надані на законну вимогу компетентного
+  органу — але лише в обсязі, прямо визначеному такою вимогою.</p>
+</div>
+
+<h2>Як довго дані зберігаються</h2>
+<p>Поки існує ваш обліковий запис. Технічні записи про доставку сповіщень зберігаються
+обмежений час і потрібні для діагностики.</p>
+
+<h2>Видалення акаунту та даних</h2>
+<p>Видалити акаунт можна <b>самостійно, прямо в застосунку</b>:</p>
+<div class="box">
+  <p><b>Профіль → Видалити акаунт</b></p>
+  <p style="margin-top:10px">Видалення незворотне. Разом з акаунтом видаляються: ваші
+  налаштування й обрані області, зареєстровані пристрої та push-токени, ваш стан, участь у
+  групах, ваші повідомлення й реакції, зв'язки з друзями.</p>
+</div>
+<p>Якщо ви є власником групи, у якій є інші учасники, застосунок попросить спершу передати
+або закрити цю групу — щоб видалення вашого акаунту не знищило чужі чати разом із їхнім
+листуванням.</p>
+<p>Якщо ви не маєте доступу до застосунку, надішліть запит на видалення з адреси, вказаної
+в акаунті, на <a href="mailto:kuubek55@gmail.com">kuubek55@gmail.com</a>.</p>
+
+<h2>Захист даних</h2>
+<ul>
+  <li>Обмін даними між застосунком і сервером відбувається лише через захищене з'єднання (HTTPS).</li>
+  <li>Паролі зберігаються у вигляді хешу (Argon2), а не у відкритому тексті.</li>
+  <li>Сесії можна завершити виходом із застосунку; вихід відкликає доступ на цьому пристрої.</li>
+</ul>
+
+<h2>Діти</h2>
+<p>Застосунок не призначений для дітей молодше 13 років і не збирає свідомо їхні дані.</p>
+
+<h2>Ваші права</h2>
+<p>Ви можете переглянути й змінити свої дані в розділі «Профіль», забрати згоду на
+сповіщення (вимкнувши їх у налаштуваннях телефона або застосунку), а також видалити акаунт
+разом з усіма даними — самостійно й будь-коли.</p>
+
+<h2>Зміни цієї політики</h2>
+<p>Якщо політика зміниться, оновлена версія з'явиться на цій сторінці разом із новою датою
+вгорі. Суттєві зміни ми додатково повідомимо в застосунку.</p>
+
+<footer>
+  ВАРТА · <code>win.kuub.varta</code> · контакт:
+  <a href="mailto:kuubek55@gmail.com">kuubek55@gmail.com</a>
+</footer>
+
+</div>
+</body>
+</html>
